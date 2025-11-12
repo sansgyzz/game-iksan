@@ -59,8 +59,8 @@
     // difficulty params
     const DIFF = {
       easy:   {gap: 170, speed: 150, gravity: 900, jump: 280, spawn: 1.4},
-      normal: {gap: 150, speed: 180, gravity: 980, jump: 300, spawn: 1.25},
-      hard:   {gap: 130, speed: 210, gravity: 1050, jump: 320, spawn: 1.1},
+      normal: {gap: 200, speed: 200, gravity: 990, jump: 300, spawn: 1.25},
+      hard:   {gap: 120, speed: 210, gravity: 1050, jump: 320, spawn: 1.1},
     };
 
     // simple sfx (beep) via WebAudio
@@ -203,7 +203,7 @@
 
       // overlay states
       if(gameState==='ready'){ drawBanner('KLIK / SPASI untuk mulai'); }
-      if(gameState==='over'){ drawBanner('UDAH BOT BEGO MATI '); }
+      if(gameState==='over'){ drawBanner('UDAH BOT BEGO MATI LAGI  '); }
     }
 
     function drawBanner(text){ ctx.save(); ctx.fillStyle='rgba(0,0,0,0.4)'; ctx.fillRect(0,0,W,H); ctx.translate(W/2, H/2 - 20); ctx.textAlign='center'; ctx.fillStyle='#fff'; ctx.font='700 24px Inter, Arial'; ctx.fillText(text, 0, 0); ctx.font='14px Inter, Arial'; ctx.fillText('Ubah tingkat kesulitan di pojok kanan ➜', 0, 28); ctx.restore(); }
